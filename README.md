@@ -13,7 +13,7 @@ Test your memory by clicking each Pokémon only once—if you click the same Pok
 ## Demo
 
 **Live Demo:**  
-[View the game here!](https://github.com/astrostar41ust/Project-Memory-Card)  
-*(Replace this link with your actual deployed URL)*
+[View the game here!]([https://github.com/astrostar41ust/Project-Memory-Card](https://project-memory-card-258.pages.dev/) 
+
 
 
