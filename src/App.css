@@ -1,0 +1,184 @@
+#root {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f6fa;
+}
+
+.header {
+  width: 100%;
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 0.2rem 1.2rem rgba(80, 80, 160, 0.08);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.header-icon {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.header-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.header-subtitle {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+  opacity: 0.95;
+}
+
+.scores {
+  position: absolute;
+  right: 2.5rem;
+  top: 2.2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.score-box {
+  background: #3b3b98;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  padding: 0.5rem 1.2rem;
+  margin-left: 0.5rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+}
+
+.score-box.best {
+  background: #00b894;
+}
+
+main {
+  width: 100%;
+  padding: 2rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(80, 80, 160, 0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.2rem 0.5rem 1.2rem 0.5rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  min-height: 13rem;
+}
+
+.card:hover {
+  transform: translateY(-0.3rem) scale(1.04);
+  box-shadow: 0 0.6rem 2rem rgba(80, 80, 160, 0.16);
+  border: solid 2px blue;
+}
+
+.card-img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  margin-bottom: 1.2rem;
+  background: #f1f2f6;
+  border-radius: 50%;
+  padding: 1.2rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(80, 80, 160, 0.07);
+}
+
+.card-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222f3e;
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 48rem) {
+  .header {
+    padding: 1.2rem 1rem 1rem 1rem;
+  }
+  .scores {
+    right: 1rem;
+    top: 1.2rem;
+  }
+  .card-grid {
+    gap: 1rem;
+    max-width: 100%;
+  }
+  .card {
+    padding: 1.2rem 0.2rem 0.8rem 0.2rem;
+    min-height: 9rem;
+  }
+  .card-img {
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: 0.7rem;
+  }
+  .card-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .header-title {
+    font-size: 1.3rem;
+  }
+  .header-subtitle {
+    font-size: 0.9rem;
+  }
+  .scores {
+    gap: 0.5rem;
+  }
+  .score-box {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
